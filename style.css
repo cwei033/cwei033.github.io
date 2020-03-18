@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Courier+Prime|Special+Elite&display=swap');
+
+
+* {
+  margin: 20px;
+  padding: 0;
+  max-width: 100%;
+}
+
+body {
+  background-color: #990810;
+  text-align: center;
+}
+h1 {
+  font-family: 'Courier Prime', monospace;
+  padding: 20px;
+  font-size: 50px;
+}
+p {
+  font-family: 'Courier Prime', monospace;
+  font-size: 18px;
+  margin: 50px 120px 50px 120px;
+}
+p1 {
+  font-family: 'Courier Prime', monospace;
+  color: black;
+}
+
+
+#vidstill {
+  width: 20%;
+}
+
+#stark {
+  position: absolute;
+  top: 30vh;
+  left: 35vw;
+}
