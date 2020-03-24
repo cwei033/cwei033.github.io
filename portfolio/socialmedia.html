@@ -4,7 +4,7 @@
   <title>Julie Wei | Social Media</title>
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="three.r95.min.js"></script>
-  <script src="vanta.waves.min.js"></script>
+  <script src="vanta.fog.min.js"></script>
 
 </head>
 
@@ -19,23 +19,22 @@
       <li>Social Media</li></a>
   </ul>
   <h2>Social Media</h2>
-
     <p>Instagram: <a href="https://www.instagram.com/carbujoo/" style="text-decoration: none">@carbujoo</a></p>
 
   <script>
-VANTA.WAVES({
-  el: "#interactive",
-  mouseControls: true,
-  touchControls: true,
-  minHeight: 200.00,
-  minWidth: 200.00,
-  scale: 1.00,
-  scaleMobile: 1.00,
-  color: 0xb3b3b3,
-  shininess: 114.00,
-  waveHeight: 26.00,
-  waveSpeed: 0.30,
-  zoom: 1.11
+  VANTA.FOG({
+    el: "#interactive",
+    mouseControls: true,
+    touchControls: true,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    highlightColor: 0xffffff,
+    midtoneColor: 0xfffbfb,
+    lowlightColor: 0xd1d1d1,
+    baseColor: 0xe0e0e0,
+    blurFactor: 0.44,
+    speed: 2.30,
+    zoom: 2.70
 })
 </script>
 

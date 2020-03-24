@@ -97,3 +97,11 @@ ul li {
   margin-left: auto;
   margin-right: auto;
 }
+.work {
+  display: block;
+  width: 80%;
+  height: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 10px white;
+}
