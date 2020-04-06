@@ -185,29 +185,30 @@ button:hover {
   padding: 5px;
   color: #ffab45;
 }
-.detaildescrip {
+.descripp .detaildescrip {
+
 }
 
 /* SPECIFIC WORKS */
-.hanahaki {
+.descripp .hanahaki {
   position: relative;
   display: block;
-  width: 40%;
+  width: 570px;
   padding:30px 40px 20px 30px;
   margin-left: 40px;
   float: left;
   background-color: white;
 }
-.guava {
+.descripp .guava {
   position: relative;
   display: block;
-  width: 40%;
+  width: 600px;
   padding:10px 40px 20px 10px;
   margin-left: 40px;
   float: left;
   background-color: white;
 }
-.thecage {
+.descripp .thecage {
   position: relative;
   display: block;
   width: 50%;
@@ -217,7 +218,7 @@ button:hover {
   float: left;
   background-color: white;
 }
-.deanza {
+.descripp .deanza {
   position: relative;
   display: block;
   width: 50%;
@@ -226,7 +227,7 @@ button:hover {
   float: left;
   background-color: white;
 }
-.sherger {
+.descripp .sherger {
   position: relative;
   display: block;
   width: 30%;
