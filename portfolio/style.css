@@ -31,6 +31,9 @@
 }
 
 /* JULIE WEI TITLE */
+.signature {
+  width: 5vw;
+}
 h1 {
   padding: 40px;
   margin-left: 10px;
@@ -103,7 +106,7 @@ ul li a {
   opacity: 0;
   transition: .5s ease;
   background-color: white;
-  margin-left: 40px;
+  margin-left: 2vw;
   margin-right: auto;
 }
 .container:hover .overlay {
@@ -125,7 +128,7 @@ ul li a {
 .center {
   display: inline-block;
   width: 100%;
-  margin-left: 40px;
+  margin-left: 2vw;
   margin-right: auto;
   position: relative;
 }
@@ -189,8 +192,17 @@ button:hover {
 .hanahaki {
   position: relative;
   display: block;
-  width: 27%;
+  width: 40%;
   padding:30px 40px 20px 30px;
+  margin-left: 40px;
+  float: left;
+  background-color: white;
+}
+.guava {
+  position: relative;
+  display: block;
+  width: 40%;
+  padding:10px 40px 20px 10px;
   margin-left: 40px;
   float: left;
   background-color: white;
@@ -201,7 +213,25 @@ button:hover {
   width: 50%;
   padding:20px 40px 20px 30px;
   margin-left: 40px;
-  margin-top: 80px;
+  margin-top: 50px;
+  float: left;
+  background-color: white;
+}
+.deanza {
+  position: relative;
+  display: block;
+  width: 50%;
+  padding:2px 40px 20px 30px;
+  margin-left: 40px;
+  float: left;
+  background-color: white;
+}
+.sherger {
+  position: relative;
+  display: block;
+  width: 30%;
+  padding:30px 40px 20px 10px;
+  margin-left: 40px;
   float: left;
   background-color: white;
 }
