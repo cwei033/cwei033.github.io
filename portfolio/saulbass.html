@@ -1,44 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Julie Wei | Home</title>
+  <title>Julie Wei | Hanahaki Disease</title>
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="three.r95.min.js"></script>
-  <script src="vanta.waves.min.js"></script>
+  <script src="vanta.fog.min.js"></script>
 
 </head>
+<!-- REMEMBER TO CHANGE TITLE NAMES -->
 
 <body>
+  <!-- SPAN EVERY PAGE -->
   <div id="interactive"></div>
   <a href="index.html" style="text-decoration: none">
     <h1>Julie Wei</h1>
   <ul>
-    <a href="about.html">
-      <li>About</li></a>
-    <a href="socialmedia.html">
-    <li>Social Media</li></a>
+    <li><a href="about.html" class="effect">About</a></li>
+    <li><a href="works.html" class="effect">Portfolio</a></li>
+    <li><a href="socialmedia.html" class="effect">Contact</a></li>
   </ul>
 
-  <img src="https://i.imgur.com/khUDg5E.jpg" class="work">
-  <h2>The Cage (2020)</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus magna augue, a consectetur tellus interdum sit amet. Proin quis augue ac nisl imperdiet commodo. Vivamus non ligula aliquet dolor fringilla egestas. Suspendisse ut fermentum sapien, ac consectetur enim. Proin suscipit cursus dui, in eleifend nulla. Mauris ultrices tincidunt est consequat maximus. Maecenas congue eu justo sed sollicitudin. Aliquam eu elit nulla. Nullam et laoreet risus. Nunc elementum urna ut lacinia fringilla. Proin at nibh quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
 
+  <div class="descripp">
+    <img src="https://i.imgur.com/brmiNV6.jpg" class="hanahaki">
+    <h2><br>Hanahaki Disease</h2>
+    <p>
+      <br>
+      <span class="medium">Medium</span><span class="mediumdescrip">Adobe Photoshop</span>
+      <br><br>
+      <span class="medium">Year</span><span class="mediumdescrip">2020</span>
+      <br><br>
+      <span class="detaildescrip">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus magna augue, a consectetur tellus interdum sit amet. Proin quis augue ac nisl imperdiet commodo. Vivamus non ligula aliquet dolor fringilla egestas. Suspendisse ut fermentum sapien, ac consectetur enim. Proin suscipit cursus dui, in eleifend nulla. Mauris ultrices tincidunt est consequat maximus. Maecenas congue eu justo sed sollicitudin. Aliquam eu elit nulla. Nullam et laoreet risus. Nunc elementum urna ut lacinia fringilla. Proin at nibh quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</span><br><br>
+    </p>
+  </div>
+
+<!-- BACKGROUND EFFECT -->
   <script>
-VANTA.WAVES({
-  el: "#interactive",
-  mouseControls: true,
-  touchControls: true,
-  minHeight: 200.00,
-  minWidth: 200.00,
-  scale: 1.00,
-  scaleMobile: 1.00,
-  color: 0xb3b3b3,
-  shininess: 114.00,
-  waveHeight: 26.00,
-  waveSpeed: 0.30,
-  zoom: 1.11
+  VANTA.FOG({
+    el: "#interactive",
+    mouseControls: true,
+    touchControls: true,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    highlightColor: 0xffffff,
+    midtoneColor: 0xfffbfb,
+    lowlightColor: 0xd1d1d1,
+    baseColor: 0xe0e0e0,
+    blurFactor: 0.44,
+    speed: 2.30,
+    zoom: 2.70
 })
 </script>
+<!-- BACKGROUND EFFECT END -->
 
 </body>
 </html>
