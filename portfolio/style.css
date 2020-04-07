@@ -218,6 +218,9 @@ button:hover {
   float: left;
   background-color: white;
 }
+#thecage {
+  height: 750px;
+}
 .descripp .deanza {
   position: relative;
   display: block;
@@ -236,7 +239,9 @@ button:hover {
   float: left;
   background-color: white;
 }
-
+#joker {
+  height: 800px;
+}
 /* PREVIOUSNEXT BUTTONS */
 .previous {
   border: solid #ffab45 2px;
