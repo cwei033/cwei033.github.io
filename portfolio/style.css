@@ -236,6 +236,15 @@ button:hover {
   float: left;
   background-color: white;
 }
+.game {
+  position: relative;
+  display: block;
+  width: 50%;
+  padding:30px 40px 20px 30px;
+  margin-left: 40px;
+  float: left;
+  background-color: white;
+}
 #joker {
   height: 900px;
 }
@@ -267,10 +276,10 @@ button:hover {
   height: 750px;
 }
 #wyld {
-  height: 950px;
+  height: 1000px;
 }
 #sherger {
-  height: 900px;
+  height: 950px;
 }
 
 /* PREVIOUSNEXT BUTTONS */
