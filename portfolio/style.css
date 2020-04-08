@@ -170,6 +170,9 @@ button:hover {
   float: left;
   background-color: white;
 }
+#about {
+  height: 450px;
+}
 
 /*WORK DESCRIPTION PAGES */
 .descripp {
