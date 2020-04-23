@@ -265,36 +265,6 @@ button:hover {
   background-color: white;
 }
 
-
-#hanahaki {
-  height: 1000px;
-}
-#lightingstudy {
-  height: 1000px;
-}
-#thecage {
-  height: 750px;
-}
-#guava {
-  height: 800px;
-}
-
-#glaser {
-  height: 1150px;
-}
-#deanza {
-  height: 700px;
-}
-#self {
-  height: 750px;
-}
-#wyld {
-  height: 1000px;
-}
-#sherger {
-  height: 950px;
-}
-
 /* PREVIOUSNEXT BUTTONS */
 .previous {
   border: solid #ffab45 2px;
