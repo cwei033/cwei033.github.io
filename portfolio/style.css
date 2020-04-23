@@ -64,6 +64,13 @@ p {
   font-family: 'Overlock', cursive;
   font-size: 18px;
 }
+p:after {
+  display: block;
+  clear: both;
+  content: " ";
+  height: 0;
+  overflow: hidden
+}
 /* HEAD LINKS */
 ul {
   font-family: 'Unica One', cursive;
@@ -257,12 +264,8 @@ button:hover {
   float: left;
   background-color: white;
 }
-#joker {
-  height: 900px;
-}
-#saulbass {
-  height: 950px;
-}
+
+
 #hanahaki {
   height: 1000px;
 }
