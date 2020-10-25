@@ -30,6 +30,14 @@
   display: block;
 }
 
+canvas {
+  margin: auto;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+}
+
 /* JULIE WEI TITLE */
 .signature {
   width: 5vw;
