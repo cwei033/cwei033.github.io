@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Julie Wei | Systemic Incubation</title>
+  <title>Julie Wei | Strings on You</title>
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="three.r95.min.js"></script>
   <script src="vanta.fog.min.js"></script>
@@ -14,120 +15,113 @@
   <div id="interactive"></div>
   <a href="index.html" style="text-decoration: none">
     <h1>Julie Wei</h1>
-  <ul>
-    <li><a href="about.html" class="effect">About</a></li>
-    <li><a href="works.html" class="effect">Portfolio</a></li>
-    <li><a href="socialmedia.html" class="effect">Contact</a></li>
-  </ul>
+    <ul>
+      <li><a href="about.html" class="effect">About</a></li>
+      <li><a href="works.html" class="effect">Portfolio</a></li>
+      <li><a href="socialmedia.html" class="effect">Contact</a></li>
+    </ul>
 
 
-  <!-- Slideshow container -->
+    <!-- Slideshow container -->
 
-<div class="slideshow-container">
+    <div class="slideshow-container">
 
-<!-- Full-width images with number and caption text -->
-<div class="mySlides fade">
-  <img src="https://i.imgur.com/XiizBd8.jpg" style="width:80% center">
-</div>
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <img src="https://i.imgur.com/S5dRJ44.jpg" style="width:80% center">
+      </div>
 
-<div class="mySlides fade">
-  <img src="https://i.imgur.com/H1QtL5q.jpg" style="width:80% center">
-</div>
+      <div class="mySlides fade">
+        <img src="https://i.imgur.com/Wrxnc6A.jpg" style="width:80% center">
+      </div>
 
-<div class="mySlides fade">
-  <img src="https://i.imgur.com/gnFOgXb.jpg" style="width:100%" center>
-</div>
+      <div class="mySlides fade">
+        <img src="https://i.imgur.com/KJhbGpT.jpg" style="width:100%" center>
+      </div>
 
-<div class="mySlides fade">
-  <img src="https://i.imgur.com/l4jLhWS.jpg" style="width:100%">
-</div>
-
-<div class="mySlides fade">
-  <img src="https://i.imgur.com/44F2a9A.jpg" style="width:100%">
-</div>
-
-<div class="mySlides fade">
-  <img src="https://i.imgur.com/SboNW7K.jpg" style="width:100%">
-</div>
+    </div>
+    <br>
 
 
-</div>
-<br>
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
 
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
 
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+          slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
-</script>
-
-    <h2><br>Systemic Incubation</h2>
+    <h2><br>Strings on You</h2>
     <p>
       <br>
-      <span class="medium">Medium</span><span class="mediumdescrip">3D Modeling with Maya</span>
+      <span class="medium">Medium</span><span class="mediumdescrip">3D Modeling in Maya</span>
       <br><br>
       <span class="medium">Year</span><span class="mediumdescrip">2020</span><br><br>
-      <span class="medium">Dimension</span><span class="mediumdescrip">1920x1080p</span>
+      <span class="medium">Dimension</span><span class="mediumdescrip">1920x1080</span>
       <br><br>
-      <span class="detaildescrip">This work is part of the virtual group exhibition, <a href="http://visatopia.xyz/sanctuary/julie.html">VISA (Virtual Institute of Simulation Art)</a>.<br> "Systemic Incubation" is a piece inspired by the concept of incubation in the realm of science fiction. The center of the piece contains one central system encased in a glass incubation chamber. The chamber is then connected to two large panels to the left and right of it which are projecting the two works, "The Cage" and "MonoBoard." "Systemic Incubation" is on display within a gallery of my own making in which the front of house consists of two stories, the first being the reception area and the second story being a balcony. The back of the gallery wherein "Systemic Incubation" resides consists only of one floor with an elevated ceiling and limited exposure to outside light. Ideally, the gallery would be located in a quiet commercial neighborhood.
+      <span class="detaildescrip">Taking inspiration from the article “POSTmatter: Holly Herndon interview,” I sought to create a scene in which technology seemingly has a life of its own. As such, I began by modeling Mac laptops and then attaching arms and legs to them. I also incorporated mouse-like shapes in the scene that were primarily influenced by Korean artist Jun Seo Hahm’s works. Then, using nCloth, a skill I recently acquired, I created red threads that wind around the entirety of the predominantly white scene. Along with serving as an accent and as a dedication to Jacob Satterwhite’s piece Robin Battles the Worm in which the element was also utilized, the red threads are also tied to the idea of the soul in Japanese legends, hence fitting into Strings on You’s theme of technological sentiency. In terms of the white palette, the choice stems primarily from my desire to step out of my usual dark color scheme which can most obviously be seen in MonoBoard and The Cage.
 
 
-      <br><br>
-      <!-- Next and previous buttons -->
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="nextgallery" onclick="plusSlides(1)">&#10095;</a>
-      <br>
-      <br>
-      <span class="previous">
-        <a href="wyld.html" class="pntextstyle">Previous</a></span>
-      <span class="next">
-        <a href="joker.html" class="pntextstyle">Next</a></span>
+
+        <br><br>
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="nextgallery" onclick="plusSlides(1)">&#10095;</a>
+        <br>
+        <br>
+        <span class="previous">
+          <a href="monoboard.html" class="pntextstyle">Previous</a></span>
+        <span class="next">
+          <a href="escape.html" class="pntextstyle">Next</a></span>
       </span>
     </p>
 
-<!-- BACKGROUND EFFECT -->
-  <script>
-  VANTA.FOG({
-    el: "#interactive",
-    mouseControls: true,
-    touchControls: true,
-    minHeight: 200.00,
-    minWidth: 200.00,
-    highlightColor: 0xffffff,
-    midtoneColor: 0xfffbfb,
-    lowlightColor: 0xd1d1d1,
-    baseColor: 0xe0e0e0,
-    blurFactor: 0.44,
-    speed: 2.30,
-    zoom: 2.70
-})
-</script>
-<!-- BACKGROUND EFFECT END -->
+    <!-- BACKGROUND EFFECT -->
+    <script>
+      VANTA.FOG({
+        el: "#interactive",
+        mouseControls: true,
+        touchControls: true,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        highlightColor: 0xffffff,
+        midtoneColor: 0xfffbfb,
+        lowlightColor: 0xd1d1d1,
+        baseColor: 0xe0e0e0,
+        blurFactor: 0.44,
+        speed: 2.30,
+        zoom: 2.70
+      })
+    </script>
+    <!-- BACKGROUND EFFECT END -->
 
 </body>
+
 </html>
