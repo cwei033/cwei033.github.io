@@ -24,6 +24,31 @@ canvas {
   src: url('fonts/Rye-Regular.ttf')
 }
 
+/* -----------SCROLLBAR--------------- */
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+  background-color: black;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #8a5b00;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #6e4800;
+}
+
 /* -------------------INDEX------------------- */
 .indexbg {
   background-color: #b57c00;
