@@ -1,135 +1,314 @@
 @import url('https://fonts.googleapis.com/css?family=Overlock|Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-* {
+html {
   margin: 0;
   padding: 0;
-  max-wodth: 100%;
+  background-image: url('assets/pinstripe.jpg');
+  background-size: 10%;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
-/* HIGHLIGHT COLOR */
-::selection {
-  background: #ffab45;
-  color: white;
-}
-
-/* FOG */
-#interactive {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    z-index: -999;
-}
-
-/* TITLE PAGE */
-.titlepage {
-  border: 5px solid black;
-  padding: 5px 0px 5px 0px;
-  font-family: 'Unica One', cursive;
-  background-color: none;
-  color: black;
-  display: block;
+body {
+  font-size: 100%;
 }
 
 canvas {
-  margin: auto;
-  top: 0;
-  left: 0;
-  position: absolute;
-  z-index: -1;
-}
-
-/* JULIE WEI TITLE */
-.signature {
-  width: 5vw;
-}
-h1 {
-  padding: 40px;
-  margin-left: 10px;
-  font-family: 'Unica One', cursive;
-  font-size: 50px;
-  font-weight: lighter;
-  color: black;
-}
-
-/* PARAGRAPH DETAILS */
-h2 {
-  font-family: 'Unica One', cursive;
-  padding: 40px;
-  margin: 0px 40px 20px 40px;
-  font-weight: lighter;
-  background-color: white;
-  background-clip:border-box;
-  font-size: 30px;
-}
-
-p {
-  padding: 40px;
-  margin: -80px 40px 20px 40px;
-  background-color: white;
-  background-clip:border-box;
-  color: grey;
-  line-height: 30px;
-  font-family: 'Overlock', cursive;
-  font-size: 18px;
-}
-p:after {
   display: block;
-  clear: both;
-  content: " ";
-  height: 0;
-  overflow: hidden
 }
-/* HEAD LINKS */
+
+@font-face {
+  font-family: Rye;
+  src: url('fonts/Rye-Regular.ttf')
+}
+
+/* -------------------INDEX------------------- */
+.indexbg {
+  background-color: #b57c00;
+  margin: 16% 40%;
+  padding: 10px;
+  border: 3px double black;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.indexname {
+  font-family: 'Unica One', cursive;
+  color: black;
+  font-size: 2em;
+  letter-spacing: 0.2em;
+  border: 0.17em double black;
+  /* padding: 2px 5px 4px 12px; */
+  text-align: center;
+  /* margin: 0 32.2% 0 30%; */
+}
+
+.position {
+  float: none;
+  position: relative;
+  margin-top: 0.8em;
+  padding: 0;
+}
+
+.indexpages {
+  font-family: 'Unica One', cursive;
+  color: black;
+  font-size: 1em;
+  letter-spacing: 0.2em;
+  margin-bottom: 1em;
+  float: none;
+}
+
+.indexeffect:hover {
+  color: white;
+  transition: .2s ease;
+  background-color: black;
+  padding: .2em .2em .2em .4em;
+}
+
+/* -------------------ALL PAGES------------------- */
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #b57c00;
+  padding: 1px 0;
+  margin: -8px -10px 0 -10px;
+  /* margin: -0.5% -0.5% 0 -0.5%; */
+  z-index: 1
+}
+
+.hrtop {
+  /* background-color: black; */
+  border-bottom: none;
+  height: 1px;
+  border-top: dashed 0.05em black;
+}
+
+.namespacing {
+  margin-top: 0.6em;
+  margin-left: 6em;
+}
+
+#name {
+  font-family: 'Unica One', cursive;
+  color: black;
+  /* -webkit-text-stroke-width: 0.2px;
+  -webkit-text-stroke-color: black; */
+  font-size: 0.9em;
+  letter-spacing: 0.2em;
+  text-decoration: none;
+  text-align: left;
+  border: 0.17em double black;
+  /* border-radius: 15px; */
+  padding: 2px 5px 4px 12px;
+  /* background-image: url(assets/gold-fabric-texture-background.jpg);
+  background-size: 50%; */
+  /* background-color: #242424; */
+  /* background-color: rgba(209, 139, 0, 0.8); */
+}
+
 ul {
   font-family: 'Unica One', cursive;
-  padding: 45px;
+  padding: 0 12em;
   float: right;
-  margin-top: -150px;
-  font-size: 18px;
-  font-weight: lighter;
-  font-stretch: semi-expanded;
+  margin-top: -45px;
+  font-size: 1em;
 }
+
 ul li {
   float: left;
-  padding: 20px;
+  padding: 0 15px;
   list-style-type: none;
 }
+
 ul li a {
-  color: black;
+  color: white;
   text-decoration: none;
 }
+
 .effect:hover {
-  color: #ffab45;
+  color: #2b2b2b;
   transition: .3s ease;
 }
 
-/*GALLERY HOVER EFFECT*/
+::selection {
+  background: rgb(209, 139, 0);
+  color: white;
+}
+
+p {
+  color: black;
+  font-family: monospace;
+}
+
+.backgroundcolor {
+  background-color: #e6e6e6;
+  margin: 3em 11em;
+  padding: 10px 40px 50px 40px;
+}
+
+.slideshowtopspace {
+  margin-top: 60px;
+}
+
+/* -----------------FULLSCREEN SLIDESHOW----------------- */
+.cb-slideshow,
+.cb-slideshow:after {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 0;
+}
+
+.cb-slideshow:after {
+  content: '';
+  background: transparent url(assets/pinstripepng.png) repeat top left;
+  background-size: 10%;
+}
+
+.cb-slideshow li span {
+  width: 100%;
+  height: 90%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  margin-top: 100px;
+  color: transparent;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: none;
+  opacity: 0;
+  z-index: 0;
+  animation: imageAnimation 16s linear infinite 0s;
+}
+
+.cb-slideshow li:nth-child(1) span {
+  background-image: url('https://i.imgur.com/cdHCemp.jpg')
+}
+
+.cb-slideshow li:nth-child(2) span {
+  background-image: url('https://i.imgur.com/44F2a9A.jpg');
+  animation-delay: 4s;
+}
+
+.cb-slideshow li:nth-child(3) span {
+  background-image: url('https://i.imgur.com/6sqLTQQ.jpg');
+  animation-delay: 8s;
+}
+
+.cb-slideshow li:nth-child(4) span {
+  background-image: url('https://i.imgur.com/4vG4QvX.jpg');
+  animation-delay: 12s;
+}
+
+@keyframes imageAnimation {
+  0% {
+    opacity: 0;
+    animation-timing-function: ease-in;
+  }
+
+  12.5% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+
+  25% {
+    opacity: 1
+  }
+
+  37.5% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 0
+  }
+
+  /* 4 images with 4sec each so 4/16 = 25%; 25/2 to get transition opacity */
+}
+
+.no-cssanimations .cb-slideshow li span {
+  opacity: 1;
+}
+
+/* ---------------------FLEX BOX GALLERY--------------------- */
+.gallerytopspace {
+  margin-top: 3em;
+}
+
+.gallerybottomspace {
+  margin-top: 3em;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 10em;
+}
+
+/* Create four(in my case,three) equal columns that sits next to each other */
+.column {
+  flex: 32.5%;
+  max-width: 32.5%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+/* @media screen and (max-width: 1200px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+} */
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1000px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* ---------------------GALLERY CAPTIONING--------------------- */
 .container {
   position: relative;
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  z-index: 0;
 }
+
 .overlay {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 100%;
+  height: calc(100%-4px);
   width: 100%;
   opacity: 0;
-  transition: .5s ease;
-  background-color: white;
-  margin-left: 2vw;
-  margin-right: auto;
+  transition: .3s ease;
+  background-color: #a36c00;
+  z-index: 0;
+  margin-top: 8px;
 }
+
 .container:hover .overlay {
-  opacity: .8;
+  opacity: .85;
 }
-.text {
-  color: grey;
-  font-size: 30px;
+
+.caption {
+  color: black;
+  font-size: 1.7em;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -138,260 +317,139 @@ ul li a {
   transform: translate(-50%, -50%);
   text-align: center;
   font-family: 'Unica One', cursive;
-  font-stretch: expanded;
+  z-index: 0;
 }
-.center {
-  display: inline-block;
-  width: 100%;
-  margin-left: 2vw;
-  margin-right: auto;
-  position: relative;
+
+/* --------------------------ART PAGES-------------------------- */
+* {
+  box-sizing: border-box;
 }
-.column {
+
+.artcolumn {
   float: left;
-  width: 31.33%;
-  padding: 5px;
+  padding: 10px;
 }
-.row::after {
+
+.left {
+  width: 75%;
+}
+
+.right {
+  width: 25%;
+}
+
+/* clear floats after the columns */
+.artrow:after {
   content: "";
-  clear: both;
   display: table;
+  clear: both;
 }
-/* ABOUT PAGE */
-button {
-  width: 300px;
-  padding: 15px;
-  background-color: transparent;
-  border: solid #ffab45 2px;
-  color: #fff;
-  border-radius: 10px;
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1000px) {
+  .artcolumn {
+    width: 100%;
+  }
+}
+
+.img {
+  width: 100%;
+}
+
+.imgtopspace {
+  margin-top: 0.8em;
+}
+
+@media screen and (min-width: 1500px) {
+  .descripsticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10%;
+    padding: 1px 0;
+  }
+}
+
+/* ------------------------TEXT------------------------- */
+
+h2 {
+  font-family: 'Unica One', cursive;
+  font-size: 1.5em;
+}
+
+h3 {
+  font-family: 'Unica One', cursive;
+  font-size: 1em
+}
+
+p {
+  line-height: 18px;
   font-size: 1em;
-  font-weight: bold;
-  color: #ffab45;
-  font-family: 'Unica One', cursive;
-}
-button:hover {
-  background-color: #ffab45;
-  color:white;
-  transition: 0.5s;
-  cursor: pointer;
-}
-#profile {
-  position: relative;
-  display: block;
-  width: 15%;
-  padding: 40px 40px 20px 30px;
-  margin-left: 40px;
-  float: left;
-  background-color: white;
 }
 
-
-/*WORK DESCRIPTION PAGES */
-.descripp {
-  padding: 20px 0px 20px 0px;
-  margin: 40px;
-  background-color: white;
-}
-.medium {
-  /* border: solid #ffab45 2px;
-  border-radius: 10px;
-  font-family: 'Unica One', cursive;
-  padding: 5px; */
-  color: #ffab45;
-}
-.mediumdescrip {
-  margin-left: 10px;
-}
-.detail {
-  border: solid #ffab45 2px;
-  border-radius: 10px;
-  font-family: 'Unica One', cursive;
-  padding: 5px;
-  color: #ffab45;
-}
-.descripp .detaildescrip {
-
+.buttonsticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 50%;
 }
 
-/* SPECIFIC WORKS */
-.hanahaki {
-  position: relative;
-  display: block;
-  width: 40%;
-  padding:30px 40px 20px 30px;
-  margin-left: 40px;
-  float: left;
-  background-color: white;
-}
-.guava {
-  position: relative;
-  display: block;
-  width: 40%;
-  padding:50px 40px 20px 20px;
-  margin-left: 40px;
-  float: left;
-  background-color: white;
-}
-.thecage {
-  position: relative;
-  display: block;
-  width: 60%;
-  padding:20px 40px 20px 30px;
-  margin-left: 40px;
-  margin-top: 50px;
-  float: left;
-  background-color: white;
-}
-.deanza {
-  position: relative;
-  display: block;
-  width: 50%;
-  padding:20px 40px 20px 30px;
-  margin-left: 40px;
-  float: left;
-  background-color: white;
-}
-.sherger {
-  position: relative;
-  display: block;
-  width: 30%;
-  padding:30px 40px 20px 10px;
-  margin-left: 40px;
-  float: left;
-  background-color: white;
-}
-.game {
-  position: relative;
-  display: block;
-  width: 50%;
-  padding:30px 40px 20px 30px;
-  margin-left: 40px;
-  float: left;
-  background-color: white;
-}
-.pictionary {
-  position: relative;
-  display: block;
-  width: 50%;
-  padding:65px 40px 20px 30px;
-  margin-left: 40px;
-  float: left;
-  background-color: white;
-}
-.jackorun {
-  position: relative;
-  display: block;
-  width: 50%;
-  padding:85px 40px 20px 30px;
-  margin-left: 40px;
-  float: left;
-  background-color: white;
-}
-/* PREVIOUSNEXT BUTTONS */
-.previous {
-  border: solid #ffab45 2px;
-  border-radius: 10px;
-  font-family: 'Unica One', cursive;
-  padding: 5px;
-  color: #ffab45;
-}
-.previous:hover {
-  background-color: #ffab45;
-  color: white;
-  transition: 0.5s;
-  cursor: pointer;
-}
-.next {
-  border: solid #ffab45 2px;
-  border-radius: 10px;
-  font-family: 'Unica One', cursive;
-  padding: 5px;
-  color: #ffab45;
-  float: right;
-}
-.next:hover {
-  background-color: #ffab45;
-  color: white;
-  transition: 0.5s;
-  cursor: pointer;
-}
-.pntextstyle {
+.buttonstyle {
   text-decoration: none;
-  color: #ffab45;
-}
-.pntextstyle:hover {
-  color: white;
+  color: black;
+  font-family: 'Unica One', cursive;
 }
 
-
-/* SLIDESHOW INFO */
-* {box-sizing:border-box}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
+.buttonstyle:hover {
+  text-decoration: none;
+  color: #a36c00;
+  font-family: 'Unica One', cursive;
+  transition: .2s ease;
 }
 
-/* Hide the images by default */
-.mySlides {
-  display: none;
-  position: relative;
-  display: block;
-  padding:55px 20px 20px 20px;
-  margin-left: 50px;
-  margin-top: 50px;
+.previous {
   float: left;
-  background-color: white;
+  margin-left: 5%;
+  background-color: #a36c00;
+  border-color: black;
+  font-size: 30px;
+  padding: 0 9px;
 }
 
-/* Next & previous buttons */
-.prev, .nextgallery {
-  cursor: pointer;
-  margin: 0 auto;
-  /* position: absolute; */
-  /* top: 50% */
-  /* width: auto; */
-  padding: 16px;
-  /* margin-top: 750px; */
-  color: grey;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  /* float: left; */
+.next {
+  float: right;
+  margin-right: 5%;
+  background-color: #a36c00;
+  border-color: black;
+  font-size: 30px;
+  padding: 0 9px;
 }
 
-/* Position the "next button" to the right */
-.nextgallery {
-  /* float: right; */
-  /* right: 10px; */
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .nextgallery:hover {
-  background-color:#ffab45;
+.previous:hover {
+  background-color: black;
   color: white;
+  border-color: #a36c00;
+  transition: .3s ease;
 }
 
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+.next:hover {
+  background-color: black;
+  color: white;
+  border-color: #a36c00;
+  transition: .3s ease;
 }
 
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+/* ----------------------------------ABOUT PAGE------------------------------ */
+
+.aboutpdfs {
+  border-radius: 0%;
+  background-color: #a36c00;
+  border-color: black;
+  font-size: 1.2em;
+  padding: 0 9px;
 }
 
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+.aboutpdfs:hover {
+  background-color: black;
+  color: white;
+  border-color: #a36c00;
+  transition: .3s ease;
 }

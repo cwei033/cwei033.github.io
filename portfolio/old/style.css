@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css?family=Overlock|Unica+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  max-wodth: 100%;
+}
+
+/* HIGHLIGHT COLOR */
+::selection {
+  background: #ffab45;
+  color: white;
+}
+
+/* FOG */
+#interactive {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -999;
+}
+
+/* TITLE PAGE */
+.titlepage {
+  border: 5px solid black;
+  padding: 5px 0px 5px 0px;
+  font-family: 'Unica One', cursive;
+  background-color: none;
+  color: black;
+  display: block;
+}
+
+canvas {
+  margin: auto;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+/* JULIE WEI TITLE */
+.signature {
+  width: 5vw;
+}
+h1 {
+  padding: 40px;
+  margin-left: 10px;
+  font-family: 'Unica One', cursive;
+  font-size: 50px;
+  font-weight: lighter;
+  color: black;
+}
+
+/* PARAGRAPH DETAILS */
+h2 {
+  font-family: 'Unica One', cursive;
+  padding: 40px;
+  margin: 0px 40px 20px 40px;
+  font-weight: lighter;
+  background-color: white;
+  background-clip:border-box;
+  font-size: 30px;
+}
+
+p {
+  padding: 40px;
+  margin: -80px 40px 20px 40px;
+  background-color: white;
+  background-clip:border-box;
+  color: grey;
+  line-height: 30px;
+  font-family: 'Overlock', cursive;
+  font-size: 18px;
+}
+p:after {
+  display: block;
+  clear: both;
+  content: " ";
+  height: 0;
+  overflow: hidden
+}
+/* HEAD LINKS */
+ul {
+  font-family: 'Unica One', cursive;
+  padding: 45px;
+  float: right;
+  margin-top: -150px;
+  font-size: 18px;
+  font-weight: lighter;
+  font-stretch: semi-expanded;
+}
+ul li {
+  float: left;
+  padding: 20px;
+  list-style-type: none;
+}
+ul li a {
+  color: black;
+  text-decoration: none;
+}
+.effect:hover {
+  color: #ffab45;
+  transition: .3s ease;
+}
+
+/*GALLERY HOVER EFFECT*/
+.container {
+  position: relative;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: white;
+  margin-left: 2vw;
+  margin-right: auto;
+}
+.container:hover .overlay {
+  opacity: .8;
+}
+.text {
+  color: grey;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: 'Unica One', cursive;
+  font-stretch: expanded;
+}
+.center {
+  display: inline-block;
+  width: 100%;
+  margin-left: 2vw;
+  margin-right: auto;
+  position: relative;
+}
+.column {
+  float: left;
+  width: 31.33%;
+  padding: 5px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* ABOUT PAGE */
+button {
+  width: 300px;
+  padding: 15px;
+  background-color: transparent;
+  border: solid #ffab45 2px;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 1em;
+  font-weight: bold;
+  color: #ffab45;
+  font-family: 'Unica One', cursive;
+}
+button:hover {
+  background-color: #ffab45;
+  color:white;
+  transition: 0.5s;
+  cursor: pointer;
+}
+#profile {
+  position: relative;
+  display: block;
+  width: 15%;
+  padding: 40px 40px 20px 30px;
+  margin-left: 40px;
+  float: left;
+  background-color: white;
+}
+
+
+/*WORK DESCRIPTION PAGES */
+.descripp {
+  padding: 20px 0px 20px 0px;
+  margin: 40px;
+  background-color: white;
+}
+.medium {
+  /* border: solid #ffab45 2px;
+  border-radius: 10px;
+  font-family: 'Unica One', cursive;
+  padding: 5px; */
+  color: #ffab45;
+}
+.mediumdescrip {
+  margin-left: 10px;
+}
+.detail {
+  border: solid #ffab45 2px;
+  border-radius: 10px;
+  font-family: 'Unica One', cursive;
+  padding: 5px;
+  color: #ffab45;
+}
+.descripp .detaildescrip {
+
+}
+
+/* SPECIFIC WORKS */
+.hanahaki {
+  position: relative;
+  display: block;
+  width: 40%;
+  padding:30px 40px 20px 30px;
+  margin-left: 40px;
+  float: left;
+  background-color: white;
+}
+.guava {
+  position: relative;
+  display: block;
+  width: 40%;
+  padding:50px 40px 20px 20px;
+  margin-left: 40px;
+  float: left;
+  background-color: white;
+}
+.thecage {
+  position: relative;
+  display: block;
+  width: 60%;
+  padding:20px 40px 20px 30px;
+  margin-left: 40px;
+  margin-top: 50px;
+  float: left;
+  background-color: white;
+}
+.deanza {
+  position: relative;
+  display: block;
+  width: 50%;
+  padding:20px 40px 20px 30px;
+  margin-left: 40px;
+  float: left;
+  background-color: white;
+}
+.sherger {
+  position: relative;
+  display: block;
+  width: 30%;
+  padding:30px 40px 20px 10px;
+  margin-left: 40px;
+  float: left;
+  background-color: white;
+}
+.game {
+  position: relative;
+  display: block;
+  width: 50%;
+  padding:30px 40px 20px 30px;
+  margin-left: 40px;
+  float: left;
+  background-color: white;
+}
+.pictionary {
+  position: relative;
+  display: block;
+  width: 50%;
+  padding:65px 40px 20px 30px;
+  margin-left: 40px;
+  float: left;
+  background-color: white;
+}
+.jackorun {
+  position: relative;
+  display: block;
+  width: 50%;
+  padding:85px 40px 20px 30px;
+  margin-left: 40px;
+  float: left;
+  background-color: white;
+}
+/* PREVIOUSNEXT BUTTONS */
+.previous {
+  border: solid #ffab45 2px;
+  border-radius: 10px;
+  font-family: 'Unica One', cursive;
+  padding: 5px;
+  color: #ffab45;
+}
+.previous:hover {
+  background-color: #ffab45;
+  color: white;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.next {
+  border: solid #ffab45 2px;
+  border-radius: 10px;
+  font-family: 'Unica One', cursive;
+  padding: 5px;
+  color: #ffab45;
+  float: right;
+}
+.next:hover {
+  background-color: #ffab45;
+  color: white;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.pntextstyle {
+  text-decoration: none;
+  color: #ffab45;
+}
+.pntextstyle:hover {
+  color: white;
+}
+
+
+/* SLIDESHOW INFO */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  position: relative;
+  display: block;
+  padding:55px 20px 20px 20px;
+  margin-left: 50px;
+  margin-top: 50px;
+  float: left;
+  background-color: white;
+}
+
+/* Next & previous buttons */
+.prev, .nextgallery {
+  cursor: pointer;
+  margin: 0 auto;
+  /* position: absolute; */
+  /* top: 50% */
+  /* width: auto; */
+  padding: 16px;
+  /* margin-top: 750px; */
+  color: grey;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  /* float: left; */
+}
+
+/* Position the "next button" to the right */
+.nextgallery {
+  /* float: right; */
+  /* right: 10px; */
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .nextgallery:hover {
+  background-color:#ffab45;
+  color: white;
+}
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}

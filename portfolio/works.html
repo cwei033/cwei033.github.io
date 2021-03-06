@@ -1,161 +1,181 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title>Julie Wei | Portfolio</title>
+  <script src="p5.js"></script>
+  <script src="p5.sound.min.js"></script>
   <link rel="stylesheet" type="text/css" href="style.css">
-  <script src="three.r95.min.js"></script>
-  <script src="vanta.fog.min.js"></script>
+  <meta charset="utf-8">
+  <title>Julie Wei | Works</title>
 
 </head>
 
 <body>
-  <!-- SPAN EVERY PAGE -->
-  <div id="interactive"></div>
-  <a href="index.html" style="text-decoration: none">
-    <h1>Julie Wei</h1>
+  <div class="sticky">
+    <h1 class="namespacing"><a href="index.html" id="name">Julie Wei</a></h1>
     <ul>
-      <li><a href="about.html" class="effect">About</a></li>
-      <li><a href="index.html" class="effect">Portfolio</a></li>
-      <li><a href="socialmedia.html" class="effect">Contact</a></li>
+      <li><a href="about.html" class="effect">about</a></li>
+      <li><a href="works.html" class="effect">works</a></li>
+      <li><a href="contact.html" class="effect">contact</a></li>
     </ul>
+    <!-- <hr class="hrtop"> -->
+  </div>
 
-    <!-- IMAGES LINE -->
-    <div class="row">
-      <div class="column">
-        <div class="container">
-          <img src="https://i.imgur.com/6KiHfG8.jpg" class="center">
-          <div class="overlay">
-            <a href="teddy.html">
-              <div class="text">Teddy Circus</div><a />
-          </div>
+  <div class="gallerytopspace"></div>
+
+  <div class="row">
+    <div class="column">
+      <div class="container">
+        <img src="art/monoboard.jpg">
+        <div class="overlay">
+          <a href="arthtmls/monoboard.html">
+            <div class="caption">MonoBoard</div>
+          </a>
         </div>
       </div>
-      <div class="column">
-        <div class="container">
-          <img src="https://i.imgur.com/E8rfuGd.jpg" class="center">
-          <div class="overlay">
-            <a href="omikuji.html">
-              <div class="text">Omikuji Generator</div><a />
-          </div>
+      <div class="container">
+        <img src="art/escape.jpg">
+        <div class="overlay">
+          <a href="arthtmls/escape.html">
+            <div class="caption">Escape</div>
+          </a>
         </div>
       </div>
-      <div class="column">
-        <div class="container">
-          <img src="https://i.imgur.com/MhzsgWm.jpg" class="center">
-          <div class="overlay">
-            <a href="pictionary.html">
-              <div class="text">Pictionary: Halloween Edition</div><a />
-          </div>
+      <div class="container">
+        <img src="art/loveandtime.jpg">
+        <div class="overlay">
+          <a href="arthtmls/loveandtime.html">
+            <div class="caption">Love & Time</div>
+          </a>
         </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="column">
-        <div class="container">
-          <img src="https://i.imgur.com/PPwSkob.jpg" class="center">
-          <div class="overlay">
-            <a href="virtualinstallation.html">
-              <div class="text">The Cage</div><a />
-          </div>
-        </div>
-      </div>
-      <div class="column">
-        <div class="container">
-          <img src="https://i.imgur.com/rQVJkg8.jpg" class="center">
-          <div class="overlay">
-            <a href="jackorun.html">
-              <div class="text">Jack o' Run</div><a />
-          </div>
-        </div>
-      </div>
-      <div class="column">
-        <div class="container">
-          <img src="https://i.imgur.com/KXh9MSi.jpg" class="center">
-          <div class="overlay">
-            <a href="systemicincubation.html">
-              <div class="text">Systemic Incubation</div><a />
-          </div>
+      <div class="container">
+        <img src="art/pictionarysmall.jpg">
+        <div class="overlay">
+          <a href="arthtmls/pictionary.html">
+            <div class="caption">Pictionary: Halloween Edition</div>
+          </a>
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="column">
-        <div class="container">
-          <img src="https://i.imgur.com/StAyvth.jpg" class="center">
-          <div class="overlay">
-            <a href="monoboard.html">
-              <div class="text">Monoboard</div><a />
-          </div>
+    <div class="column">
+      <div class="container">
+        <img src="art/systemic.jpg">
+        <div class="overlay">
+          <a href="arthtmls/systemic.html">
+            <div class="caption">Systemic Incubation</div>
+          </a>
         </div>
       </div>
-      <div class="column">
-        <div class="container">
-          <img src="https://i.imgur.com/jSAWPQP.jpg" class="center">
-          <div class="overlay">
-            <a href="stringsonyou.html">
-              <div class="text">Strings on You</div><a />
-          </div>
+      <div class="container">
+        <img src="art/cage.jpg">
+        <div class="overlay">
+          <a href="arthtmls/cage.html">
+            <div class="caption">The Cage</div>
+          </a>
         </div>
       </div>
-      <div class="column">
-        <div class="container">
-          <img src="https://i.imgur.com/QLfc0Q5.jpg" class="center">
-          <div class="overlay">
-            <a href="escape.html">
-              <div class="text">Escape</div><a />
-          </div>
+      <div class="container">
+        <img src="art/alice.jpg">
+        <div class="overlay">
+          <a href="arthtmls/alice.html">
+            <div class="caption">Alice's Castle Escape</div>
+          </a>
         </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="column">
-        <div class="container">
-          <img src="https://i.imgur.com/qyrKmhm.jpg" class="center">
-          <div class="overlay">
-            <a href="parfumearrings.html">
-              <div class="text">Parfum Earrings</div><a />
-          </div>
+      <div class="container">
+        <img src="art/stringsonyou.jpg">
+        <div class="overlay">
+          <a href="arthtmls/stringsonyou.html">
+            <div class="caption">Strings on You</div>
+          </a>
         </div>
       </div>
-      <div class="column">
-        <div class="container">
-          <img src="https://i.imgur.com/KqAH2V5.jpg" class="center">
-          <div class="overlay">
-            <a href="self.html">
-              <div class="text">Self</div><a />
-          </div>
-        </div>
-      </div>
-      <div class="column">
-        <div class="container">
-          <img src="https://i.imgur.com/rqFGFvt.jpg" class="center">
-          <div class="overlay">
-            <a href="glaser.html">
-              <div class="text">Milton Glaser</div><a />
-          </div>
+      <div class="container">
+        <img src="art/jackorun.jpg">
+        <div class="overlay">
+          <a href="arthtmls/jackorun.html">
+            <div class="caption">Jack o' Run</div>
+          </a>
         </div>
       </div>
     </div>
-    <!-- IMAGES LINE END -->
+    <div class="column">
+      <div class="container">
+        <img src="art/omikuji.jpg">
+        <div class="overlay">
+          <a href="arthtmls/omikuji.html">
+            <div class="caption">Omikuji Generator</div>
+          </a>
+        </div>
+      </div>
+      <div class="container">
+        <img src="art/newyear.jpg">
+        <div class="overlay">
+          <a href="arthtmls/newyear.html">
+            <div class="caption">2021 New Year Card</div>
+          </a>
+        </div>
+      </div>
+      <div class="container">
+        <img src="art/teddy.jpg">
+        <div class="overlay">
+          <a href="arthtmls/teddy.html">
+            <div class="caption">Teddy Circus</div>
+          </a>
+        </div>
+      </div>
+      <!-- glaser -->
+      <!-- <img src="art/glasersmall.jpg"> -->
+    </div>
+  </div>
+
+  <div class="gallerybottomspace"></div>
+
+  <!-- <div class="gallery">
+    <figure class=”gallery__item gallery__item--1">
+      <img src="https://i.imgur.com/YiTcnDu.jpg" class="gallery__img" alt="Image 1">
+    </figure>
+    <figure class="gallery__item gallery__item--2">
+      <img src="https://i.imgur.com/MBjhlCa.jpg" class="gallery__img" alt="Image 2">
+    </figure>
+    <figure class="gallery__item gallery__item--3">
+      <img src="https://i.imgur.com/a3eZsA3.jpg" class="gallery__img" alt="Image 3">
+    </figure>
+    <figure class="gallery__item gallery__item--4">
+      <img src="https://i.imgur.com/tJMWcfY.jpg" class="gallery__img" alt="Image 4">
+    </figure>
+    <figure class="gallery__item gallery__item--5">
+      <img src="https://i.imgur.com/44F2a9A.jpg" class="gallery__img" alt="Image 5">
+    </figure>
+    <figure class="gallery__item gallery__item--6">
+      <img src="https://i.imgur.com/cdHCemp.jpg" class="gallery__img" alt="Image 6">
+    </figure>
+    <figure class="gallery__item gallery__item--7">
+      <img src="https://i.imgur.com/KqF4kOz.png" class="gallery__img" alt="Image 7">
+    </figure>
+    <figure class="gallery__item gallery__item--8">
+      <img src="https://i.imgur.com/AD3Howq.jpg" class="gallery__img" alt="Image 8">
+    </figure>
+    <figure class="gallery__item gallery__item--9">
+      <img src="https://i.imgur.com/4vG4QvX.jpg" class="gallery__img" alt="Image 9">
+    </figure>
+    <figure class="gallery__item gallery__item--10">
+      <img src="https://i.imgur.com/YdPN6Lc.jpg" class="gallery__img" alt="Image 10">
+    </figure>
+    <figure class="gallery__item gallery__item--11">
+      <img src="https://i.imgur.com/hZT1doL.jpg" class="gallery__img" alt="Image 11">
+    </figure>
+    <figure class="gallery__item gallery__item--12">
+      <img src="https://i.imgur.com/6sqLTQQ.jpg" class="gallery__img" alt="Image 12">
+    </figure>
+    <figure class="gallery__item gallery__item--13">
+      <img src="https://i.imgur.com/hD3ga1G.jpg" class="gallery__img" alt="Image 13">
+    </figure>
+  </div> -->
 
 
-    <script>
-      VANTA.FOG({
-        el: "#interactive",
-        mouseControls: true,
-        touchControls: true,
-        minHeight: 200.00,
-        minWidth: 200.00,
-        highlightColor: 0xffffff,
-        midtoneColor: 0xfffbfb,
-        lowlightColor: 0xd1d1d1,
-        baseColor: 0xe0e0e0,
-        blurFactor: 0.44,
-        speed: 2.30,
-        zoom: 2.70
-      })
-    </script>
+
 
 </body>
 
