@@ -25,7 +25,6 @@ canvas {
 }
 
 /* -----------SCROLLBAR--------------- */
-
 /* width */
 ::-webkit-scrollbar {
   width: 7px;
@@ -191,9 +190,10 @@ p {
   position: absolute;
   background-color: #1a1a1a;
   min-width: 100px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   border-radius: 3px;
+  /* padding: 1px 0 5px 0; */
 }
 
 /* Links inside the dropdown */
@@ -205,10 +205,15 @@ p {
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #363636;}
+.dropdown-content a:hover {
+  background-color: #363636;
+  border-radius: 3px;
+}
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 /* -----------------FULLSCREEN SLIDESHOW----------------- */
 .cb-slideshow,
@@ -425,7 +430,6 @@ p {
 }
 
 /* ------------------------TEXT------------------------- */
-
 h2 {
   font-family: 'Unica One', cursive;
   font-size: 1.5em;
@@ -493,7 +497,6 @@ p {
 }
 
 /* ----------------------------------ABOUT PAGE------------------------------ */
-
 .aboutpdfs {
   border-radius: 0%;
   background-color: #a36c00;
